@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CRUD</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <div class="title">
+    <h1 style="color: green;">C R U D (créer, lire, mettre à jour, supprimer)</h1>
+    <p>Liste des patients:</p>
+  </div>
+  <marquee behavior="" direction="left">
+    <p class="brille" style="color: green;font: 1em sans-serif;">
+      <script>
+        new Date().toLocaleDateString("fr");
+        document.write(Date());
+
+      </script>
+    </p>
+  </marquee>
+  <div class="form">
+    <form action="javascript:void(0);" method="POST" onsubmit="app.Add()"> <br>
+      <input required type="text" id="add-patient" placeholder="Ajouter un patient 🤒">
+      <!-- <input type="text" id="add-patient1" placeholder="Ajouter le prenom du patient"> -->
+      <br> <br>
+      <input type="submit" value="Ajouter" class="btn btn-primary">
+    </form>
+    <p>Vous avez : </p>
+    <!-- pour compter le nombre de patients en attente -->
+    <p id="counter"></p>
+
+    <table>
+      <tr class="to-do">
+        <th>
+          <h3> Liste d'attente : </h3>
+        </th>
+      </tr>
+      <tbody id="tasks">
+      </tbody>
+    </table>
+  </div>
+
+  <div id="edit-box" role="aria-hidden">
+    <form action="javascript:void(0);" method="POST" id="save-edit" name="formulaire">
+      <input type="text" id="edit-todo">
+      <input type="submit" value="Enregitrer" class="btn btn-success" />
+      <a onclick="CloseInput()" aria-label="Close">&#10006;</a>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

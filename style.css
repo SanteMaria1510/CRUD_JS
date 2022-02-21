@@ -1,0 +1,56 @@
+*{
+  align-items: center;
+}
+/* #brille{
+  position: relative;
+  font-family: Impact, sans-serif;
+  font-size: 45px;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, #90ee90, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 5s infinite;
+  background-clip: initial;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+ @keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+} */
+  .title{
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  .form{
+      margin: auto;
+      max-width:400px;
+      text-align: center
+  }
+
+  input[type='submit'], button, [aria-label]{
+    cursor: pointer;
+  }
+  #edit-box{
+    display: none;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  td{
+      background-color: aliceblue;
+      padding-right: 10px;
+      text-align: left;
+  }
+
+  .to-do{
+      background: transparent !important;
+      /* text-align: center; */
+  }
+ 
